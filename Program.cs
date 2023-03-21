@@ -14,7 +14,7 @@ void ArrayFill(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        System.Console.WriteLine($"Input {i} word of new array");
+        System.Console.WriteLine($"Input {i+1} word of new array");
         array[i] = Console.ReadLine();
     }
 }
@@ -23,8 +23,9 @@ void ArrayPrint(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        System.Console.WriteLine($"{array[i]}, ");
+        System.Console.Write($"{array[i]}; ");
     }
+    System.Console.WriteLine();
 }
 
 string[] NewArrayLessThan3(string[] array)
