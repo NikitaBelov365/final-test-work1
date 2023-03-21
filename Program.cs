@@ -26,3 +26,19 @@ void ArrayPrint(string[] array)
         System.Console.WriteLine($"{array[i]}, ");
     }
 }
+
+string[] NewArrayLessThan3(string[] array)
+{
+    string[] newArray = new string[array.Length];
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if(array[i].Length < 4)
+        {
+            newArray[count] = array[i];
+            count ++;
+        }
+    }
+    Array.Resize(ref newArray, count);
+    return newArray;
+}
