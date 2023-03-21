@@ -42,3 +42,10 @@ string[] NewArrayLessThan3(string[] array)
     Array.Resize(ref newArray, count);
     return newArray;
 }
+
+int arraySize = InputArraySize("Input array size");
+string[] array = ArrayCreation(arraySize);
+ArrayFill(array);
+ArrayPrint(array);
+string[] newArray = NewArrayLessThan3(array);
+ArrayPrint(newArray);
